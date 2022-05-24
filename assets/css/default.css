@@ -1,0 +1,57 @@
+/* ====== RESET ====== */
+ul, ol {list-style:none; margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6, p {margin:0;}
+
+/* ====== DEFAULT ====== */
+a, button {text-decoration:none; transition:all 0.2s linear;}
+a:hover, button:hover {text-decoration:none; transition:all 0.2s linear;}
+a:focus {outline:0;}
+a img {border:none;}
+body {width:100%; height:100%; font-family:'Helvetica', 'Arial', sans-serif;  margin:0;}
+
+#app {width:100%; max-width:1024px; min-height:100vh; background-color:#f1f1f1; margin:0 auto; position:relative;}
+
+header {
+	background-color:#FFF; padding:15px 0; text-align:center; border-bottom:1px solid #ebebeb; position:fixed; left:0; right:0;
+}
+	header img {width:164px; height:auto;}
+
+main {min-height:100vh; display:flex; justify-content:center; padding:90px 30px 0;}
+.listaTemp li {
+	background:#FFF; border-radius:4px; margin-bottom:30px; text-align:center; box-shadow:1px 1px 3px 1px rgba(51,51,51,0.1);
+	width:250px; 
+}
+	.listaTemp h2 {color:#737c84; font-size:18px; font-weight:normal; border-bottom:1px solid #ebebeb; padding:10px;}
+	.listaTemp h5 {font-size:12px; color:#b4b4b4; font-weight:normal; text-transform:uppercase; margin-bottom:4px;}
+	.listaTemp .meta {min-height:175px;}
+	.listaTemp .meta.loading {display:flex; align-items:center; justify-content:center;}
+	.listaTemp .temp {display:flex; align-items:center; justify-content:center; height:140px; color:#ff9632; font-size:80px;}
+	.listaTemp .temp.cold {color:#69a3ff;}
+	.listaTemp .temp.hot {color:#ed1946;}
+	.listaTemp .info {
+		font-size:18px; color:#737c84; background-color:rgba(241,241,241,0.5); display:flex; justify-content:space-around; 
+		max-height:0; overflow:hidden; transition:max-height 0.15s ease-out;
+	}
+	.listaTemp li:hover .info {max-height:100px; transition:max-height 0.25s ease-in;}
+		.listaTemp .info div {width:40%; padding-top:10px;}
+		.listaTemp .info strong {font-weight:normal;}
+		.listaTemp .info small {font-size:12px;}
+	.listaTemp .update {background-color:rgba(241,241,241,0.5); font-size:10px; color:#b4b4b4; text-align:center; padding:12px 0;}
+	.listaTemp .meta.error {display:flex; align-items:center; justify-content:center; flex-direction:column;}
+		.listaTemp .meta.error h4 {font-size:16px; font-weight:normal; color:#ed1946; margin-bottom:10px;}
+	.listaTemp a.btnTry {
+		display:inline-block; font-size:16px; color:#737c84; padding:10px 20px; border:2px solid #737c84; border-radius:21px;
+	}
+	.listaTemp a.btnTry:hover {color:#FFF; background:#737c84;}
+
+@media only screen and (min-width : 992px) {
+	main {padding-top:0;}
+	.listaTemp {display:flex; justify-content:space-around; align-items:center; width:100%; padding:0 40px;}
+	.listaTemp li:nth-child(1) {order:2;} 
+	.listaTemp li:nth-child(2) {order:1;} 
+	.listaTemp li:nth-child(3) {order:3;} 
+}
+
+@media only screen and (min-width : 1024px) {
+	header {width:1024px; left:50%; margin-left:-512px;}
+}
