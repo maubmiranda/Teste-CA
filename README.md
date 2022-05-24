@@ -9,7 +9,10 @@
  
  # Estrutura de pastas e arquivos
  /assets/css: pasta contendo o arquivo CSS 
+ 
  /assets/images: pasta contendo as imagens
+ 
  /assets/js: pasta contentdo o arquivo JS 
+ 
  index.html: página do teste
  
