@@ -5,7 +5,7 @@
  
  Teste feito utilizando a biblioteca jQuery para realizar as consultas da API em: https://openweathermap.org/
  
- Acesse o teste em: 
+ Acesse o teste em: https://maubmiranda.github.io/Teste-CA/
  
  # Estrutura de pastas e arquivos
  /assets/css: pasta contendo o arquivo CSS 
