@@ -55,7 +55,7 @@ jQuery.noConflict();
 			
 			function updateWeather(city, item){
 				$.ajax({
-					url: "http://api.openweathermap.org/data/2.5/weather",
+					url: "https://api.openweathermap.org/data/2.5/weather",
 					data: {q: city, units: "metric", lang: "pt_br", appid: keyMaster},
 					type: "GET",
 					dataType: "JSON",
