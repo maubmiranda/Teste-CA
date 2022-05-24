@@ -1,9 +1,7 @@
 # Desafio Front-end Conta Azul
- Teste de Front-end aplicado pela Conta Azul
+ Teste para vaga de Front-end aplicado pela Conta Azul.
  
- <hr>
- 
- Teste feito utilizando a biblioteca jQuery para realizar as consultas da API em: https://openweathermap.org/
+ Fiz o teste utilizando a biblioteca jQuery para realizar as consultas da API em: https://openweathermap.org/
  
  Acesse o teste em: https://maubmiranda.github.io/Teste-CA/
  
